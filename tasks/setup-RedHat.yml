@@ -1,0 +1,21 @@
+---
+#
+
+- name: Download runsc
+  get_url:
+    url: https://storage.googleapis.com/gvisor/releases/release/latest/${ARCH}
+    dest: /usr/local/bin
+    mode: 0755
+    checksum: sha512:https://storage.googleapis.com/gvisor/releases/release/latest/${ARCH}//containerd-shim-runsc-v1.sha512
+    checksum: sha512:5bdea5414713c9ba39e226f062701fa14998b1a798c9750f956a0f59b5edabb8d83af9ec9f81cf9f47fa92c21b560c9b2be1b543d0bd8f1b49579b69101d3a8f
+    group: root
+    owner: root
+
+- name: Download containerd-shim-runsc-v1
+  get_url:
+    url: https://storage.googleapis.com/gvisor/releases/release/latest/${ARCH}
+    dest: /usr/local/bin
+    mode: 0755
+    checksum: sha512:https://storage.googleapis.com/gvisor/releases/release/latest/${ARCH}//runsc.sha512
+    group: root
+    owner: root

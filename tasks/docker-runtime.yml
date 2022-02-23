@@ -1,0 +1,17 @@
+---
+# /usr/local/bin/runsc install
+# sudo systemctl reload docker
+#
+# runtime arg configuration
+#
+# Network Passthrough
+# "--network=host"
+#
+# Disable external networking
+# "--network=none"
+#
+# Sandbox overlay
+# "--overlay"
+#
+# Linux older than 4.14.77
+# "--gso=false"
